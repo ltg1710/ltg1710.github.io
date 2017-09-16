@@ -59,7 +59,7 @@ function newCircle() {
     for( var i = 0; i < circles.length; i++) {
         var c = circles[i];
         var d = dist(x, y, c.x, c.y);
-        if(d < c.r) {
+        if(d-5 < c.r) {
             invalid = false;
             break;
         }
